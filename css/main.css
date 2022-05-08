@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f3f3;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+.menu button {
+  padding: 12px 25px;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+}
+
+.menu button:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+.menu .fas {
+  padding-right: 10px;
+}
+
+.add {
+  margin-right: 20px;
+}
+
+.note-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.note {
+  margin: 40px 20px;
+  width: 240px;
+  background-color: #fff300;
+  border: 1px solid black;
+}
+
+.note-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.delete-note {
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.note-body {
+  padding: 20px 15px;
+  font-size: 14px;
+}
+
+.note-panel {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 40px 0;
+  width: 600px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+
+.note-panel h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.note-panel label {
+  margin-bottom: 10px;
+}
+
+.note-panel #text, .note-panel #category {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 90%;
+  max-height: 600px;
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.note-panel .error {
+  margin-bottom: 20px;
+  color: red;
+  visibility: hidden;
+}
+
+.note-panel .fas, .note-panel .far {
+  padding-right: 10px;
+}
+
+.note-panel button, .note-panel .cancel, .note-panel .save {
+  padding: 12px 25px;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+}
+
+.note-panel button:hover, .note-panel .cancel:hover, .note-panel .save:hover {
+  background-color: #333;
+  color: #ddd;
+}
+/*# sourceMappingURL=main.css.map */
